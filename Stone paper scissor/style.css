@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    background-color: #CFCFCF;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 0 1rem;
+}
+
+.choice {
+    height: 20vw;
+    width: 20vw;
+    max-height: 165px;
+    max-width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.choice:hover {
+    background-color: #0F0F0F;
+    cursor: pointer;
+}
+
+img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.score-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+}
+
+#user-score, #comp-score {
+    font-size: 3rem;
+}
+
+.msg-container {
+    margin-top: 3rem;
+}
+
+#msg {
+    background-color: #081b31;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+    display: inline-block;
+    max-width: 90%;
+    word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        height: 4rem;
+        line-height: 4rem;
+    }
+
+    #msg {
+        font-size: 1.5rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 2.5rem;
+    }
+
+    .score-board {
+        gap: 1.5rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .choice {
+        height: 30vw;
+        width: 30vw;
+    }
+
+    .choices {
+        gap: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        height: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    #user-score, #comp-score {
+        font-size: 2rem;
+    }
+
+    .score-board {
+        font-size: 1rem;
+        gap: 1rem;
+    }
+}
